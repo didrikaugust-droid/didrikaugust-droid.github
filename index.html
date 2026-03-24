@@ -5,13 +5,14 @@
 <title>My Travel Project</title>
 
 <style>
+
 body {
 background: linear-gradient(to right, #0f2027, #2c5364);
 font-family: Arial;
 }
 
 .container {
-width: 700px;
+width: 900px;
 margin: auto;
 background: white;
 padding: 20px;
@@ -20,17 +21,37 @@ box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 text-align: center;
 }
 
-a {
-display: block;
-margin: 10px;
-font-size: 18px;
-color: darkblue;
-text-decoration: none;
+.trips {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+margin-top: 20px;
 }
 
-a:hover {
+.trip {
+width: 200px;
+text-align: center;
+}
+
+.trip img {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.trip img:hover {
 transform: scale(1.05);
 transition: 0.3s;
+}
+
+.trip p {
+font-weight: bold;
+color: darkblue;
+}
+
+a {
+text-decoration: none;
 }
 
 </style>
@@ -42,16 +63,48 @@ transition: 0.3s;
 
 <h1>My Travel Project</h1>
 
-<p>Hello! My name is Didrik and I am 13 years old.</p>
-<p>This website shows places I have visited.</p>
+<p>Hello! My name is Didrik and this website shows places I have visited.</p>
 
 <h2>My Trips</h2>
 
-<a href="nice.html">Nice, France</a>
+<div class="trips">
 
-<a href="monaco.html">Monaco</a>
+<div class="trip">
+<a href="nice.html">
+<img src="nice.JPG">
+<p>Nice, France</p>
+</a>
+</div>
 
-<a href="gdansk.html">Gdansk, Poland</a>
+<div class="trip">
+<a href="monaco.html">
+<img src="monaco.JPG">
+<p>Monaco</p>
+</a>
+</div>
+
+<div class="trip">
+<a href="gdansk.html">
+<img src="gdansk.JPG">
+<p>Gdansk, Poland</p>
+</a>
+</div>
+
+<div class="trip">
+<a href="lamanga.html">
+<img src="lamanga.JPG">
+<p>La Manga, Spain</p>
+</a>
+</div>
+
+<div class="trip">
+<a href="london.html">
+<img src="london.JPG">
+<p>London, UK</p>
+</a>
+</div>
+
+</div>
 
 </div>
 
